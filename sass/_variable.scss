@@ -1,0 +1,18 @@
+@mixin resetCss {
+    *{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+@mixin addFont {
+    @font-face {
+        font-family: iran-sans;
+        src: url("../Font/IranSans/eot/IRANSansWebFaNum.eot") format("eot");
+        src: url("../Font/IranSans/ttf/IRANSansWebFaNum.ttf") format("ttf");
+        src: url("../Font/IranSans/woff/IRANSansWebFaNum.woff") format("woff");
+    }
+}
+@mixin font-web($size) {
+    font-family: iran-sans;
+    font-size: $size;
+}
